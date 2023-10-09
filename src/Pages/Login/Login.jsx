@@ -1,11 +1,12 @@
 import React from 'react'
 import { FaEye } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc'
 import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
     <div>
-        <div className='w-fit mx-auto mt-16 rounded-3xl overflow-hidden shadow-2xl'>
+        <div className='w-fit mx-auto mt-10 rounded-3xl overflow-hidden shadow-2xl'>
             <div className='text-center px-8 pt-6'>
                 <h2 className="text-purple-700 text-3xl font-bold">Login Here</h2>
                 <p className='text-xl font-light mt-2'>
@@ -14,19 +15,23 @@ const Login = () => {
                     been missed!
                 </p>
             </div>
-            <div className='px-8 my-10 flex flex-col'>
+            <div className='px-8 my-8 flex flex-col'>
                 <input type="email" name="email" placeholder='Enter your email here' className='outline-purple-600 p-2 border-2 border-black rounded-md' />
-                <div className='mt-10 flex items-center'>
+                <div className='mt-8 flex items-center'>
                     <input type="password" name="password" placeholder='Enter your password here' className='outline-purple-600 p-2 border-2 border-black rounded-md w-full' />
                     <span className='-ml-7'><FaEye /></span>
                 </div>
             </div>
-            <div className='w-full mt-1 mb-8 px-8'>
+            <div className='w-full my-1  px-8'>
                 <input type="submit" value="Login" className='bg-purple-600 text-white text-lg font-medium w-full py-1 rounded-md' />
             </div>
-            <div className='mx-8 flex justify-between items-end gap-2 p-1'>
-                <p className='font-light text-sm'>Don't have an account yet?</p>
+            <div className='mx-8 flex justify-center items-center gap-2 p-1 text-sm mb-8'>
+                <p className='font-light'>Don't have an account yet?</p>
                 <Link to={'/register'} className='text-purple-800 font-medium'>Register</Link>
+            </div>
+            <div className='px-8 mb-6'>
+                <div className='flex justify-center items-center'><hr className='grow' /><span className='px-4'>OR</span><hr className='grow' /></div>
+                <button className='flex justify-start items-center gap-2 text-lg border-2 border-gray-300 rounded-md w-full py-1 pl-2 mt-4'><FcGoogle className='text-2xl' /><span>Continue with google</span></button>
             </div>
         </div>
     </div>
