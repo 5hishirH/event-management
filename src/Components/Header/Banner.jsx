@@ -6,7 +6,7 @@ const Banner = () => {
         <div className='text-7xl text-center leading-relaxed font-semibold'>
             We Create
             <br />
-            You Celebrate
+            You <span className='text-purple-700'>Celebrate</span>
         </div>
     </div>
   )
