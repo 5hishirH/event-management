@@ -14,7 +14,7 @@ const Login = () => {
 
   const notify = (message) => toast.error(message);
 
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, handleGoogleSignIn } = useContext(AuthContext);
 
     const handleLogin = e => {
         setLoginError('');
@@ -37,6 +37,10 @@ const Login = () => {
             const errorMessage = error.message;
             notify(errorMessage)
           });
+      }
+
+      const hello = () => {
+        handleGoogleSignIn()
       }
 
   return (
@@ -70,7 +74,7 @@ const Login = () => {
             </div>
             <div className='px-8 mb-6'>
                 <div className='flex justify-center items-center'><hr className='grow' /><span className='px-4'>OR</span><hr className='grow' /></div>
-                <button className='flex justify-start items-center gap-2 text-lg border-2 border-gray-300 rounded-md w-full py-1 pl-2 mt-4'><FcGoogle className='text-2xl' /><span>Continue with google</span></button>
+                <button onClick={hello} className='flex justify-start items-center gap-2 text-lg border-2 border-gray-300 rounded-md w-full py-1 pl-2 mt-4'><FcGoogle className='text-2xl' /><span>Continue with google</span></button>
             </div>
         </div>
         <ToastContainer position='bottom-right' />

@@ -18,6 +18,7 @@ const Navbar = () => {
             <Link to={'/'}>Home</Link>
             <Link to={'/reviews'}>Review</Link>
             <Link to={'/about'}>About</Link>
+            <Link to={'/register'}>Register</Link>
             <div>
               {
                 user ?
