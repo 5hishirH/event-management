@@ -13,9 +13,11 @@ const Navbar = () => {
   }
   return (
     <div className='w-full shadow-lg flex justify-between items-center py-6 px-4'>
-        <div className='text-3xl font-bold'>Event Manager</div>
+        <div className='text-3xl font-bold'>EventElegancce</div>
         <nav className='text-lg font-medium flex items-center gap-4'>
             <Link to={'/'}>Home</Link>
+            <Link to={'/reviews'}>Review</Link>
+            <Link to={'/about'}>About</Link>
             <div>
               {
                 user ?

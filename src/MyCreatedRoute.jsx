@@ -9,6 +9,8 @@ import PrivateRoute from './Pages/Private/PrivateRoute'
 import Test from './Components/test/Test'
 import ServiceDetail from './Pages/ServiceDetails/ServiceDetail'
 import Footer from './Components/Footer'
+import Reviews from './Pages/Private/Reviews'
+import AboutUs from './Pages/Private/AboutUs'
 
 const MyCreatedRoute = createBrowserRouter([
     {
@@ -32,6 +34,14 @@ const MyCreatedRoute = createBrowserRouter([
             {
                 path: '/serviceDetail/:id',
                 element: <PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>,
+            },
+            {
+                path: '/reviews',
+                element: <PrivateRoute><Reviews></Reviews></PrivateRoute>
+            },
+            {
+                path: '/about',
+                element: <PrivateRoute><AboutUs></AboutUs></PrivateRoute>
             }
         ]
     }
