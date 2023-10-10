@@ -5,6 +5,10 @@ import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import Register from './Pages/Register/Register'
+import PrivateRoute from './Pages/Private/PrivateRoute'
+import Test from './Components/test/Test'
+import ServiceDetail from './Pages/ServiceDetails/ServiceDetail'
+import Footer from './Components/Footer'
 
 const MyCreatedRoute = createBrowserRouter([
     {
@@ -24,6 +28,11 @@ const MyCreatedRoute = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/serviceDetail/:id',
+                element: <PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>,
+                loader: () => fetch('./socialEvents.json')
             }
         ]
     }

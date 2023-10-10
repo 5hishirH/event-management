@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Navigate } from 'react-router-dom'
 
 const ServiceCard = ({card}) => {
   return (
@@ -11,7 +12,8 @@ const ServiceCard = ({card}) => {
                 <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
                 <p className='text-sm font-light'>{card.info}</p>
             </div>
-            <button className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2'>View details</button>
+            {/* <button className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2'>View details</button> */}
+            <Link to={`/serviceDetails/${card.id}`} className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2' >View details</Link>
         </div>
     </div>
   )
