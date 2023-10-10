@@ -3,36 +3,42 @@
         "id": 1,
         "title": "Birthday Party",
         "info": "Transform your birthday dreams into reality with our expert event management. From concept to celebration, we create unforgettable moments tailored just for you.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/Jpycf76/birthday1.jpg"
     },
     {
         "id": 2,
         "title": "Enagement Party",
         "info": "Unlock your journey to forever love. Our skilled event team curates enchanting engagement celebrations, crafting precious memories that begin your story with elegance and style.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/QkkDFPV/engagement-Party1.jpg"
     },
     {
         "id": 3,
         "title": "Wedding Ceremony",
         "info": "Elevate your special day with our expert touch. We design exquisite wedding ceremonies, where love takes center stage, and every detail radiates elegance, beauty, and lasting memories.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/52R3s5w/wedding-Ceremony1.jpg"
     },
     {
         "id": 4,
         "title": "Baby Shower",
         "info": "Welcome the newest member of your family in style. Our experienced team crafts heartwarming baby showers, filled with joy, love, and unforgettable moments for you and your little one.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/60hMJdQ/baby-Shower1.jpg"
     },
     {
         "id": 5,
         "title": "Anniversary Party",
         "info": "Celebrate enduring love and commitment. Our team designs flawless anniversary parties, where cherished memories blend seamlessly with sophistication, creating an unforgettable journey through time.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/8PJLrbX/Anniversaries1.jpg"
     },
     {
         "id": 6,
         "title": "Retirement Party",
         "info": "Honoring a lifetime of achievements and new beginnings. We specialize in crafting memorable retirement parties, where stories are shared, laughter echoes, and dreams are celebrated.",
+        "details": "Social event management involves planning, organizing, and executing various social gatherings and occasions, such as weddings, parties, conferences, and fundraisers. It encompasses tasks like venue selection, budgeting, guest list management, catering, entertainment, and logistics. Successful social event managers ensure seamless coordination to create memorable experiences while adhering to clients' visions and budget constraints. Effective communication, creativity, attention to detail, and problem-solving skills are vital in this field, making it possible to craft enjoyable and stress-free events for clients and their guests.",
         "img": "https://i.ibb.co/6wfgwkF/retirement-Party1.png"
     }
 ]

@@ -61,7 +61,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className='w-full my-1  px-8'>
-                    <input type="submit" value="Login" className='bg-purple-600 text-white text-lg font-medium w-full py-1 rounded-md' />
+                    <input type="submit" value="Login" className='bg-purple-600 text-white text-lg font-medium w-full py-1 rounded-md cursor-pointer' />
                 </div>
             </form>
             <div className='mx-8 flex justify-center items-center gap-2 p-1 text-sm mb-8'>

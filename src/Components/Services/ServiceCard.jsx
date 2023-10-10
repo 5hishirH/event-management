@@ -13,7 +13,7 @@ const ServiceCard = ({card}) => {
                 <p className='text-sm font-light'>{card.info}</p>
             </div>
             {/* <button className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2'>View details</button> */}
-            <Link to={`/serviceDetails/${card.id}`} className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2' >View details</Link>
+            <Link to={`/serviceDetail/${card.id}`} className='bg-purple-500 w-fit text-white font-medium rounded px-4 py-2' >View details</Link>
         </div>
     </div>
   )

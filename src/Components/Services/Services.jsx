@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard'
 
 const Services = ({serviceData}) => {
   return (
-    <div className='mt-24 w-11/12 mx-auto mb-12'>
+    <div className='mt-24 w-11/12 mx-auto'>
         <h2 className='text-4xl font-bold text-center mb-10'>Our Services</h2>
         <div className='w-full grid grid-cols-2 gap-8'>
             {
