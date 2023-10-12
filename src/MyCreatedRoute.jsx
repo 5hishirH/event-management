@@ -21,7 +21,7 @@ const MyCreatedRoute = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                // loader: () => fetch('./socialEvents.json')
+                loader: () => fetch('https://api.jsonbin.io/v3/b/6527c84954105e766fc14958')
             },
             {
                 path: '/login',
@@ -34,6 +34,7 @@ const MyCreatedRoute = createBrowserRouter([
             {
                 path: '/serviceDetail/:id',
                 element: <PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>,
+                loader: () => fetch('https://api.jsonbin.io/v3/b/6527c84954105e766fc14958')
             },
             {
                 path: '/reviews',
