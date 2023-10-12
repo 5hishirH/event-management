@@ -6,6 +6,7 @@ import { AuthContext } from '../../Providers/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import swal from 'sweetalert';
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
     const [loginError, setLoginError] = useState('');     // an empty string evaluated to be false
@@ -14,7 +15,7 @@ const Login = () => {
 
   const notify = (message) => toast.error(message);
 
-    const { signInUser, handleGoogleSignIn } = useContext(AuthContext);
+    const { signInUser, handleGoogleUser, auth, provider } = useContext(AuthContext);
 
     const handleLogin = e => {
         setLoginError('');
@@ -39,8 +40,27 @@ const Login = () => {
           });
       }
 
-      const hello = () => {
-        handleGoogleSignIn()
+      const handleSignInWithGoogle = () => {
+        handleGoogleUser()
+        .then((result) => {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          // The signed-in user info.
+          const user = result.user;
+          // IdP data available using getAdditionalUserInfo(result)
+          // ...
+          swal("Thank You!", "For creating an account!", "success");
+        }).catch((error) => {
+          // Handle Errors here.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // The email of the user's account used.
+          const email = error.customData.email;
+          // The AuthCredential type that was used.
+          const credential = GoogleAuthProvider.credentialFromError(error);
+          // ...
+        });
       }
 
   return (
@@ -74,7 +94,7 @@ const Login = () => {
             </div>
             <div className='px-8 mb-6'>
                 <div className='flex justify-center items-center'><hr className='grow' /><span className='px-4'>OR</span><hr className='grow' /></div>
-                <button onClick={hello} className='flex justify-start items-center gap-2 text-lg border-2 border-gray-300 rounded-md w-full py-1 pl-2 mt-4'><FcGoogle className='text-2xl' /><span>Continue with google</span></button>
+                <button onClick={handleSignInWithGoogle} className='flex justify-start items-center gap-2 text-lg border-2 border-gray-300 rounded-md w-full py-1 pl-2 mt-4'><FcGoogle className='text-2xl' /><span>Continue with google</span></button>
             </div>
         </div>
         <ToastContainer position='bottom-right' />

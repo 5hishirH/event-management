@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Providers/AuthProvider';
 import swal from 'sweetalert';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider } from "firebase/auth";
 
 
 const Register = () => {
@@ -19,19 +19,29 @@ const Register = () => {
 
   const handleRegister = e => {
     e.preventDefault();
-
+    
     setRegisterError('');
     setRegisterSuccess('');
-
+    
     
     const email = e.target.email.value;     // from name attribute of input:email
     const password = e.target.password.value;
     console.log(email, password);
     
+    
     if(password.length < 6) {
-      setRegisterError('Password must be of 6 characters atleast');
       notify('Password must be of 6 characters atleast');
-      return;
+      return
+    }
+    else if(/[A-Z]/.test(password))
+    {
+      notify(registerError + 'Must Contain atleast one capital letter');
+      return
+    }
+    else if(/[0-9]/.test(password))
+    {
+      notify(registerError + 'Must Contain atleast one number');
+      return
     }
     
     createUser(email, password)
@@ -45,7 +55,7 @@ const Register = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         // ..
-        notify(errorMessage)
+        notify(errorMessage);
       });
     
   }
